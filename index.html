@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Mini Portfolio</title>
+    <title>Portfolio - Dimas Yusuf Qurohman</title>
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -19,6 +19,9 @@
 
     <!-- Header Profile -->
     <header class="profile container">
+        <!-- Theme Button -->
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+
         <div class="profile_container grid">
             <div class="profile_data">
                 <div class="profile_border">
@@ -58,12 +61,11 @@
                 </div>
             </div>
 
-            <div class="profile_buttons">
+        <div class="profile_buttons">
                 <!-- Insert your CV -->
                 <a href="assets/pdf/CV - Dimas Yusuf Qurohman.pdf" download="" class="button">
                     Download CV <i class="ri-download-line"></i>
                 </a>
-            </div>
 
             <div class="profile_buttons_small">
                 <!-- Insert your whatsapp -->
@@ -83,7 +85,7 @@
         <section class="filters container">
             <!-- Filters Tabs -->
             <ul class="filters_content">
-                <button class="filters_button" data-target="#projects">
+                <button class="filters_button filter-tab-active" data-target="#projects">
                     Projects
                 </button>
 
@@ -93,7 +95,7 @@
             </ul>
             <div class="filters_sections">
                 <!-- Projects -->
-                <div class="projects_content grid" data-content id="projects">
+                <div class="projects_content grid filters_active" data-content id="projects">
                     <article class="projects_card">
                         <img src="assets/images/project1.png" alt="Project 1" class="projects_img">
                         <div class="projects_modal">
@@ -149,7 +151,123 @@
 
                 <!-- Skills -->
                 <div class="skills_content grid" data-content id="skills">
+                    <div class="skills_area">
+                        <h3 class="skills_title">
+                            Front-end Developer
+                        </h3>
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">HTML</h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">CSS</h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
 
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">JavaScript</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">React</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Bootstrap</h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Git</h3>
+                                        <span class="skills_level">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills_area">
+                        <h3 class="skills_title">
+                            Back-end Developer
+                        </h3>
+                        <div class="skills_box">
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Python</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">MySQL</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Firebase</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills_group">
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">Laravel</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">MongoDB</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <div>
+                                        <h3 class="skills_name">NodeJS</h3>
+                                        <span class="skills_level">Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -157,11 +275,13 @@
 
     <!-- Footer -->
     <footer class="footer container">
-
+        <span class="footer_copy">
+            &#169; Dimas Yusuf Qurohman. All rights reserved
+        </span>
     </footer>
 
     <!-- Scroll Reveal -->
-    <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
